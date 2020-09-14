@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: top-center;
+    font-family: sans-serif;
+}
+
+.app-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1)), rgba(0,0,0,0.5);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header .input {
+text-align: center;
+margin: 100px;
+background-color: rgba(255, 255, 255, 0.4);
+}
+header input[type="text"] {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0px 16px 0px 16px;
+    border-bottom: 2px solid #892be21f;
+}
+
+header input[type="submit"] {
+    background-color:rgba(255,2550,0255,0.7);
+    display: block;
+    padding: 10px 15px;
+    border-radius: 2em;
+    font-weight: 300;
+    outline: none;
+
+}
+
+header input:focus {
+    background-color: rgba(255,2550,0255,0.7);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.display .name{
+    color: rgb(201, 166, 166);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.display .temp {    
+    color: rgb(201, 166, 166);
+    font-size: 100px;
+    font-weight: 800;
+    margin: 3px 0px;
+    text-shadow: 2px 10px rgba(0,0,0,0.3);
+}
+
+.display .temp span {
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+.display .desc {    
+    color: rgb(201, 166, 166);
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0,0,0,0.3);
+}
